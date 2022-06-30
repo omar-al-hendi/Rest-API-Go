@@ -7,8 +7,6 @@ import (
 	"net/http"
 	"strconv"
 
-	// "math/rand"
-	// "strconv"
 	"github.com/gorilla/mux"
 )
 
@@ -48,8 +46,6 @@ func getBook(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	json.NewEncoder(w).Encode(&Book{})
-
-
 }
 
 // Create a new book
